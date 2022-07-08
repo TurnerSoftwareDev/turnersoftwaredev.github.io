@@ -1,34 +1,45 @@
 import Head from 'next/head'
 
-import Post from '../components/post'
-
-export async function getStaticProps() {
-  // fetch list of posts
-  const response = await fetch(
-    'https://jsonplaceholder.typicode.com/posts?_page=1'
-  )
-  const postList = await response.json()
-  return {
-    props: {
-      postList,
-    },
-  }
-}
-
-export default function IndexPage({ postList }) {
-  return (
-    <main>
-      <Head>
-        <title>Home page</title>
-      </Head>
-
-      <h1>List of posts</h1>
-
-      <section>
-        {postList.map((post) => (
-          <Post {...post} key={post.id} />
-        ))}
-      </section>
-    </main>
-  )
+export default function IndexPage() {
+    return (
+        <div>
+            <Head>
+                <title>Turner Software Development</title>
+            </Head>
+            <header>
+                <span>Logo here</span>
+                <span>Contact Us button here</span>
+            </header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <main>
+                <section>
+                    <p>Hero section: large image, catchy saying (e.g. "Let's Get Coding"),
+                        a sentence about my philosophy, and a Hire Me button.</p>
+                </section>
+                <section>
+                    <p>Information about me: professional background, location, etc.</p>
+                </section>
+                <section>
+                    <p>Services: website, API, and database development. Hosting setup. Linux administration.</p>
+                </section>
+                <section>
+                    <p>Project examples</p>
+                </section>
+                <section>
+                    <p>How to contact me</p>
+                </section>
+                <footer>
+                    <p>Columns for each of the sections, copyright statement, maybe a newsletter signup,etc.</p>
+                </footer>
+            </main>
+        </div>
+    )
 }
