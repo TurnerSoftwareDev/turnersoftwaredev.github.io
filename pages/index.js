@@ -7,8 +7,10 @@ export default function IndexPage() {
                 <title>Turner Software Development</title>
             </Head>
             <header>
-                <span>Logo here</span>
-                <span>Contact Us button here</span>
+                <div className="flex flex-row">
+                    <div>Logo here</div>
+                    <div>Contact Us button here</div>
+                </div>
             </header>
             <nav>
                 <ul>
