@@ -10,7 +10,7 @@ export default function HomePage() {
         <PageLayout title="Home - Turner Software Development">
             <HeroUnit className="mb-2"/>
             <Services className="mb-2" />
-            <About className="mb-2"/>
+            <About className="mb-2 bg-slate-200"/>
             <Portfolio className="mb-2" />
             <Contact className="mb-2" />
         </PageLayout>
