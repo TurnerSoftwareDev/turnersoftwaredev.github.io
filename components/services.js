@@ -15,7 +15,7 @@ const servicesData = [
     {
         id: "database-management",
         name: "Database Management",
-        description: "Design, modify, and query databases."
+        description: "Design, modify, and query PostgreSQL and Mongodb databases."
     },
     {
         id: "cloud-management",
