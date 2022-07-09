@@ -18,8 +18,8 @@ export default function PageLayout({title, className, children}) {
             <main className="bg-white">
                 {children}
             </main>
-            <footer className="p-4 bg-slate-900 text-white">
-                <p>Columns for each of the sections, copyright statement, maybe a newsletter signup,etc.</p>
+            <footer className="p-8 bg-slate-900 text-white">
+                <p className="text-center font-light text-sm text-slate-400">Copyright &copy; {new Date().getFullYear()} Turner Software Development LLC</p>
             </footer>
         </div>
     )
