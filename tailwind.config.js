@@ -5,7 +5,14 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        backgroundImage: {
+            "hero-800": "url('/images/hero-unit-bg_800.jpg')",
+            "hero-1200": "url('/images/hero-unit-bg_1200.jpg')",
+            "hero-1600": "url('/images/hero-unit-bg_1600.jpg')",
+            "hero-1800": "url('/images/hero-unit-bg_1800.jpg')",
+        }
+    },
   },
   plugins: [],
 }
