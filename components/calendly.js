@@ -5,7 +5,7 @@ export default function Calendly({className}) {
     return (
         <section className={classNames('consultation flex flex-col w-full items-center p-4 md:p-8', className)}>
             <div className="flex flex-col md:flex-row justify-center max-w-6xl ">
-                <div className="flex flex-col md:w-1/3">
+                <div className="flex flex-col mb-4 md:w-1/3">
                     <h2>Schedule a Consultation</h2>
                     <p className="font-semibold">I am available for a consultation if you need advice about the software challenges your organization faces.</p>
                     <p>Duration: 30 minutes</p>

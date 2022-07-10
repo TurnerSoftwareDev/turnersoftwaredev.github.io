@@ -4,27 +4,27 @@ import partition from '../lib/partition';
 const servicesData = [
     {
         id: "web-development",
-        name: "Web Development",
-        description: "Everything from basic websites to complex web applications."
+        name: "Web",
+        description: "Develop everything from basic websites to complex web applications."
     },
     {
         id: "database-management",
-        name: "Database Management",
-        description: "Design, modify, and query PostgreSQL and Mongodb databases."
+        name: "Databases",
+        description: "Design, modify, and query popular relational and document-based database systems."
     },
     {
         id: "api-development",
-        name: "API Development",
-        description: "Develop performant, scalable REST APIs."
+        name: "APIs",
+        description: "Implement reliable, standards-compliant, scalable REST APIs."
     },
     {
         id: "cloud-management",
-        name: "Cloud Management",
+        name: "Cloud",
         description: "Set up and maintain AWS cloud environments."
     },
     {
         id: "browser-extensions",
-        name: "Browser Extension Development",
+        name: "Browser Extensions",
         description: "Develop add ons for Chrome and Firefox."
     },
     {
@@ -37,7 +37,7 @@ const servicesData = [
 function Service({name, description, className}) {
     return (
         <div className={classNames('service md:p-2 md:h-40', className)}>
-            <h3>{name}</h3>
+            <h3 className="md:text-center">{name}</h3>
             <p>{description}</p>
         </div>
     )
