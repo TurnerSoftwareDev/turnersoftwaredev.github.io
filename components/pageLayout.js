@@ -5,12 +5,11 @@ import Logo from './logo';
 import Button from './button';
 
 function Header({className}) {
-    const textColor = "text-green-700";
     return (
         <header className={classNames('header', className)}>
             <div className="flex flex-row px-4 py-2 justify-between items-center align-middle">
-                <Logo className={textColor}/>
-                    <Button className={'bg-green-700'}>
+                <Logo className="text-green-600"/>
+                    <Button className={'bg-green-600'}>
                         <Link href='mailto:info@turnersoftwaredevelopment.com'>
                             <a className="text-white">Contact Me</a>
                         </Link>
