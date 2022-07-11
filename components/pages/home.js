@@ -10,7 +10,7 @@ export default function HomePage() {
             <HeroUnit className="mb-2"/>
             <Services className="mb-2" />
             <About className="mb-2 bg-slate-200"/>
-            <Calendly />
+            {/*<Calendly />*/}
         </PageLayout>
     )
 }
