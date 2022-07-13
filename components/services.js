@@ -37,7 +37,7 @@ const servicesData = [
 function Service({name, description, className}) {
     return (
         <div className={classNames('service md:p-2 md:h-40', className)}>
-            <h3 className="md:text-center">{name}</h3>
+            <h3 className="text-green-900 md:text-center">{name}</h3>
             <p>{description}</p>
         </div>
     )

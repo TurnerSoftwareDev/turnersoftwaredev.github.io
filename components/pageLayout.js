@@ -8,8 +8,8 @@ function Header({className}) {
     return (
         <header className={classNames('header', className)}>
             <div className="flex flex-row px-4 py-2 justify-between items-center align-middle">
-                <Logo className="text-green-600"/>
-                    <Button className={'bg-green-600'}>
+                <Logo className="text-green-900"/>
+                    <Button className={'bg-green-900'}>
                         <Link href='mailto:info@turnersoftwaredevelopment.com'>
                             <a className="text-white">Contact Me</a>
                         </Link>
